@@ -10,11 +10,12 @@ return {
     },
   },
   { "navarasu/onedark.nvim", lazy = false, priority = 1000, opts = { style = "warmer" } },
+  { "shaunsingh/nord.nvim" , lazy = false, priority = 1000, opts = {}},
   -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa-wave",
+      colorscheme = "nord",
     },
   },
 }
