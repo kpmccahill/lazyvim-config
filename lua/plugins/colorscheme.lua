@@ -11,26 +11,49 @@ return {
   },
   -- { "shaunsingh/nord.nvim" , lazy = false, priority = 1000, opts = {}},
   { "navarasu/onedark.nvim", lazy = false, priority = 1000, opts = { style = "dark" }},
+  --- {
+  ---     'sainnhe/everforest',
+  ---     lazy = false,
+  ---     priority = 1000,
+  ---     opts = {
+  ---           style = 'light'
+  ---     },
+  ---     config = function()
+  ---       -- Optionally configure and load the colorscheme
+  ---       -- directly inside the plugin declaration.
+  ---       vim.g.everforest_enable_italic = true
+  ---       -- vim.o.background = "light"
+  ---       vim.g.everforest_background = "soft"
+  ---       vim.cmd.colorscheme('everforest')
+  ---     end
+  --- },
+  --- {
+  ---     'edeneast/nightfox.nvim',
+  ---     lazy = false,
+  ---     priority = 1000,
+  ---     config = function()
+  ---       -- Optionally configure and load the colorscheme
+  ---       -- directly inside the plugin declaration.
+  ---       -- vim.o.background = "light"
+  ---       vim.g.nightfox_italic_comments = true
+  ---       vim.cmd.colorscheme('nightfox')
+  ---     end
+  --- },
   {
-      'sainnhe/everforest',
+      'mofiqul/vscode.nvim',
       lazy = false,
       priority = 1000,
-      opts = {
-            style = 'light'
-      },
       config = function()
         -- Optionally configure and load the colorscheme
         -- directly inside the plugin declaration.
-        vim.g.everforest_enable_italic = true
-        -- vim.o.background = "light"
-        vim.g.everforest_background = "soft"
-        vim.cmd.colorscheme('everforest')
+        vim.o.background = "light"
+        vim.cmd.colorscheme('vscode')
       end
   },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "everforest",
+      colorscheme = "vscode",
     },
   },
 }
