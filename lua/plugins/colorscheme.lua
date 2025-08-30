@@ -10,7 +10,7 @@ return {
     },
   },
   -- { "shaunsingh/nord.nvim" , lazy = false, priority = 1000, opts = {}},
-  { "navarasu/onedark.nvim", lazy = false, priority = 1000, opts = { style = "dark" }},
+  { "navarasu/onedark.nvim", lazy = false, priority = 1000, opts = { style = "cool", transparent = true }},
   --- {
   ---     'sainnhe/everforest',
   ---     lazy = false,
@@ -39,21 +39,18 @@ return {
   ---       vim.cmd.colorscheme('nightfox')
   ---     end
   --- },
+---  {
+---      'mofiqul/vscode.nvim',
+---      lazy = false,
+---      priority = 1000,
+---      config = function()
+---        -- Optionally configure and load the colorscheme
+---        -- directly inside the plugin declaration.
+---        vim.o.background = "dark"
+---        vim.cmd.colorscheme('vscode')
+---      end
+---  },
   {
-      'mofiqul/vscode.nvim',
-      lazy = false,
-      priority = 1000,
-      config = function()
-        -- Optionally configure and load the colorscheme
-        -- directly inside the plugin declaration.
-        vim.o.background = "light"
-        vim.cmd.colorscheme('vscode')
-      end
-  },
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "vscode",
-    },
+    "LazyVim/LazyVim", opts = { colorscheme = "onedark", },
   },
 }
