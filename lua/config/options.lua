@@ -3,7 +3,8 @@
 -- Add any additional options here
 
 -- Turning off auto format
-vim.g.autoformat = false
+vim.g.autoformat = true
 vim.o.tabstop = 4
 vim.o.softtabstop = 4
 vim.o.shiftwidth = 4
+-- vim.o.background = "light"
