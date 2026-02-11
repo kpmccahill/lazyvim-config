@@ -4,7 +4,7 @@ return {
     "ellisonleao/gruvbox.nvim",
     lazy = false,
     priority = 1000,
-    opts = { transparent_mode = true, contrast = "hard" },
+    opts = { transparent_mode = false, contrast = "hard" },
   },
   {
     "folke/tokyonight.nvim",
